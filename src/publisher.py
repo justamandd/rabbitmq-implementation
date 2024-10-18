@@ -44,8 +44,8 @@ rabbitmq_publisher = RabbitmqPublisher()
 
 while True:
   data = {
-    'title': input('Titulo da Mensagem: '),
-    'message': input('Corpo da Mensagem: '),
+    'title': str(input('Titulo da Mensagem: ')),
+    'message': str(input('Corpo da Mensagem: ')),
   }
 
   rabbitmq_publisher.publish(data)
